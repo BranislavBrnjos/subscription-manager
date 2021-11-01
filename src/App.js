@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './main.scss';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './AppRoutes';
+import { QueryClient, QueryClientProvider } from 'react-query'
+import Breadcrumbs from './components/Breadcrumbs';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const queryClient = new QueryClient()
+
+  function App() {
+    return (
+      <Router>
+        <QueryClientProvider client={queryClient}>
+          <header>
+            <Breadcrumbs />
+          </header>
+          <main className="c-page-layout">
+            <AppRoutes />
+          </main>
+      </QueryClientProvider>
+      </Router>
+    );
+  }
 
 export default App;

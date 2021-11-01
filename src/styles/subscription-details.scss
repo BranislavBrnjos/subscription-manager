@@ -1,0 +1,14 @@
+.c-subscription-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+}
+
+.c-subscription-details__item {
+  display: grid;
+  grid-template-columns: 200px auto;
+
+  > :first-child {
+    font-weight: bold;
+  }
+}

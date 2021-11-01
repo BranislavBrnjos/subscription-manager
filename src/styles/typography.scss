@@ -1,0 +1,61 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+button,
+input,
+textarea,
+p,
+span,
+blockquote,
+th,
+td {
+  color: $color-white;
+}
+
+p {
+  vertical-align: middle;
+  display: inline-block;
+  word-break: break-word;
+  font-size: pxToRem(16px);
+  line-height: 1.5;
+}
+
+span,
+a {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: var(--color-title);
+}

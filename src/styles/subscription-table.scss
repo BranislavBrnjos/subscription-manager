@@ -1,0 +1,35 @@
+.c-subscriptions-table {
+  width: 100%;
+  border: 1px solid $color-main-lighter;
+
+  tr {
+    border: 1px solid $color-main-lightest;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  &.c-subscriptions-table--empty {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 32px;
+  }
+}
+
+.c-subscription-table__item-selected {
+  opacity: 0.5;
+}
+
+.c-subscriptions-table__cta {
+  padding: 32px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-subscriptions__delete-multiple {
+  margin: 16px 0 16px auto;
+}

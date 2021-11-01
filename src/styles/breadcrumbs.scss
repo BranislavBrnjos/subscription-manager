@@ -1,0 +1,13 @@
+.c-breadcrumbs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: $color-main;
+  border-top: 2px solid $color-main-light;
+  border-bottom: 2px solid $color-main-light;
+
+  > :first-child {
+    margin-right: 32px;
+  }
+}

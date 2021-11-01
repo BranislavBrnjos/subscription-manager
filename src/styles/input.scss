@@ -1,0 +1,23 @@
+.c-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-input__label {
+  margin-bottom: 8px;
+}
+
+.c-input__field {
+  max-width: 400px;
+  width: 100%;
+
+  background-color: $color-main-light;
+  border: 1px solid $color-main-lightest;
+  color: $color-white;
+  padding: 8px;
+}
+
+.c-input__error {
+  margin-top: 4px;
+  color: red;
+}
